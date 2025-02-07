@@ -19,8 +19,8 @@ pub fn load_instruction_data<'a>(
             index
         }
         Err(_) => {
-            return Err(ProgramError::InvalidArgument);
-            // return Err(ReadingNumInstructionsError);
+            // return Err(ProgramError::InvalidArgument);
+            return Err(ReadingNumInstructionsError);
         }
     };
 
